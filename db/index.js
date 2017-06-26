@@ -1,9 +1,9 @@
-import React from "react";
-import { render } from "react-dom";
+const db = require("./db.js");
 
-render(
-  <div>
-    Hi
-  </div>,
-  document.getElementById("main")
-);
+require("./models/index.js");
+const force = true;
+const logging = false;
+db.sync({ force, logging })
+  .then(() => console.log(`Synced models ${force ? "(forced)" : ""}`));
+
+module.exports = db;
