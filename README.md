@@ -1,5 +1,5 @@
-#Portfolio website for portfolios...
+# Portfolio website for portfolios...
 
-##By Jonathan Liu
+## By Jonathan Liu
 
-###https://github.com/JonathanLiu25/portfolio
+### https://github.com/JonathanLiu25/portfolio
