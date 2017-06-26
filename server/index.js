@@ -12,4 +12,11 @@ app
   // static files from public
   .use(express.static(resolve(__dirname, "..", "public")));
 
-module.exports = app;
+// start db and server
+require("../db/index.js");
+const port = 3000;
+const server = app.listen(port, () => {
+  console.log(`Listening on port ${server.address().port}`);
+});
+
+module.exports = server;
